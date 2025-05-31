@@ -307,7 +307,7 @@ main .DisplayData .data .deleteInfo:hover {
   }
   main .login form input {
     padding: 0.8em;
-    padding-right: 10em;
+    padding-right: 7.5em;
     font-size: 1.2em;
   }
   main .login form .btn {
@@ -319,11 +319,11 @@ main .DisplayData .data .deleteInfo:hover {
   }
   main .SignUp form {
     gap: 1.2em;
-    width: 74%;
+    width: 78%;
   }
   main .SignUp form input {
     padding: 0.8em;
-    padding-right: 10em;
+    padding-right: 7.5em;
     font-size: 1.2em;
   }
   main .SignUp form .CreateAcc {
