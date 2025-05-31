@@ -1,0 +1,438 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.light-theme
+{
+    background-color: #fff;
+}
+.dark-theme
+{
+    background-color: #1f1f1f;
+}
+
+html,body
+{
+    height: 100%;
+    width: 100%;
+
+    
+}
+
+main
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5em;
+    padding: 1rem;
+    .navbar
+    {
+        width: 100%;
+        background-color: rgb(172, 172, 172);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 20px 20px rgba(0,0,0,0.3);
+        color: black;
+        border: 1px solid rgb(172, 172, 172);
+        border-radius: 0.5em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h1 
+        {
+            font-family:fantasy;
+            padding-left: 0.7rem;
+            font-size: 1.5em;
+        }
+
+        .toggle
+        {
+            display: flex;
+            justify-content: flex-end;
+            img 
+            {
+                padding-right: 0.7rem;
+                width: 44%;
+                aspect-ratio: 1/1;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .login
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        form
+        {
+            width: 100%;
+            aspect-ratio: 1/1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2em;
+            background-color: rgb(172, 172, 172);
+            border: 1px solid rgb(172, 172, 172);
+            border-radius: 0.5em;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 20px 20px rgba(0,0,0,0.3);
+
+
+            input 
+            {
+                padding: 0.5em;
+                padding-right: 7em;
+                border: 1px solid rgb(172, 172, 172);
+                border-radius: 0.5em;
+                font-size: 1.1em;
+            }
+
+            .btn
+            {
+                padding: 0.5em;
+                padding-left: 1.5em;
+                padding-right: 1.5em;
+                font-size: 1.2em;
+                border-radius: 0.5em;
+                border: 1px solid rgb(172, 172, 172);
+                background-color: #1f1f1f;
+                color: white;
+            }
+            .btn:hover
+            {
+                scale: 1.1;
+                cursor: pointer;
+                background-color: white;
+                color: black;
+            }
+
+            p 
+            {
+                font-size: 1.2em;
+                .showSignup
+                {
+                    font-size: 1em;
+                    color:blue;
+                    cursor:pointer;
+                }
+            }
+        }
+
+    }
+
+    .SignUp
+    {
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        form
+        {
+            width: 100%;
+            aspect-ratio: 1/1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1em;
+            background-color: rgb(172, 172, 172);
+            border: 1px solid rgb(172, 172, 172);
+            border-radius: 0.5em;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 20px 20px rgba(0,0,0,0.3);
+
+
+            input 
+            {
+                padding: 0.5em;
+                padding-right: 7em;
+                border: 1px solid rgb(172, 172, 172);
+                border-radius: 0.5em;
+                font-size: 1.1em;
+            }
+
+            .CreateAcc
+            {
+                padding: 0.5em;
+                padding-left: 1.5em;
+                padding-right: 1.5em;
+                font-size: 1.2em;
+                border-radius: 0.5em;
+                border: 1px solid rgb(172, 172, 172);
+                background-color: #1f1f1f;
+                color: white;
+            }
+            .CreateAcc:hover
+            {
+                scale: 1.1;
+                cursor: pointer;
+                background-color: white;
+                color: black;
+            }
+
+            .BackLogInBtn
+            {
+               padding: 0.5em;
+                padding-left: 1.5em;
+                padding-right: 1.5em;
+                font-size: 1.2em;
+                border-radius: 0.5em;
+                border: 1px solid rgb(172, 172, 172);
+                background-color: #1f1f1f;
+                color: white; 
+            }
+            .BackLogInBtn:hover
+            {
+                scale: 1.1;
+                cursor: pointer;
+                background-color: white;
+                color: black;
+            }
+        }
+
+    }
+
+    .VaultSection
+    {
+        width: 100%;
+        display: none;
+        justify-content: center;
+        background-color: rgb(172, 172, 172);
+        border-radius: 0.5em;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 20px 20px rgba(0,0,0,0.3);
+        padding: 5em;
+
+
+        form 
+        {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            // flex-shrink: 1;
+            gap: 2em;
+
+            input
+            {
+                padding: 0.5em;
+                padding-right: 8em;
+                border: 1px solid rgb(172, 172, 172);
+                border-radius: 0.5em;
+                font-size: 1.1em;
+            }
+
+            .savebtn
+            {
+                padding: 0.5em;
+                padding-left: 1.5em;
+                padding-right: 1.5em;
+                font-size: 1.2em;
+                border-radius: 0.5em;
+                border: 1px solid rgb(172, 172, 172);
+                background-color: #1f1f1f;
+                color: white;
+            }
+            .savebtn:hover
+            {
+                scale: 1.1;
+                cursor: pointer;
+                background-color: white;
+                color: black;
+            }
+
+            .logoutBtn
+            {
+                padding: 0.5em;
+                padding-left: 1.5em;
+                padding-right: 1.5em;
+                font-size: 1.2em;
+                border-radius: 0.5em;
+                border: 1px solid rgb(172, 172, 172);
+                background-color: #1f1f1f;
+                color: white;
+            }
+            .logoutBtn:hover
+            {
+                scale: 1.1;
+                cursor: pointer;
+                background-color: white;
+                color: black;
+            }
+
+        }
+
+        .logoutBtn
+        {
+            width: fit-content;
+        }
+    }
+
+    .searchdata
+    {
+        width: 100%;
+        display: none;
+        justify-content: center;
+        background-color: rgb(172, 172, 172);
+        border-radius: 0.5em;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 20px 20px rgba(0,0,0,0.3);
+        padding: 1em;
+        input 
+        {
+            width: 100%;
+            padding: 0.5em;
+            padding-right: 5em;
+            border: 1px solid rgb(172, 172, 172);
+            border-radius: 0.5em;
+            font-size: 1.1em;
+        }
+    }
+
+    .DisplayData
+    {
+        width: 100%;
+        display: none;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2em;
+        background-color: rgb(172, 172, 172);
+        border-radius: 0.5em;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 20px 20px rgba(0,0,0,0.3);
+        padding: 5em;
+
+        .data
+        {
+            background-color: #1f1f1f;
+            color: #fff;
+            padding: 1em;
+            border-radius: 0.5em;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5em;
+
+            .deleteInfo
+            {
+                padding: 0.5em;
+                padding-left: 1em;
+                padding-right: 1em;
+                width: fit-content;
+                font-size: 1.2em;
+                border-radius: 0.5em;
+                border: 1px solid rgb(172, 172, 172);
+                background-color: #1f1f1f;
+                color: white;
+            }
+            .deleteInfo:hover
+            {
+                cursor: pointer;
+                background-color: white;
+                color: black;
+            }
+        }
+
+    }
+
+}
+
+
+@media (min-width: 1080px)
+{
+    main
+    {
+        padding: 2rem;
+        .navbar
+        {
+             h1 
+            {
+                font-size: 1.9em;
+            }
+
+            .toggle
+            {
+                img 
+                {
+                    padding-right: 0.7rem;
+                    width: 60%;
+                }
+            }
+        }
+
+        .login
+        {
+            width: 55%;
+            form
+            {
+                width: 74%;
+                input 
+                {
+                    padding: 0.8em;
+                    padding-right: 10em;
+                    font-size: 1.2em;
+                }
+                .btn
+                {
+                    padding: 0.7em;
+                    font-size: 1.3em;
+                }
+            }
+        }
+
+        .SignUp
+        {
+            width: 55%;
+            form
+            {
+                gap: 1.2em;
+                width: 74%;
+                input 
+                {
+                    padding: 0.8em;
+                    padding-right: 10em;
+                    font-size: 1.2em;
+                }
+                .CreateAcc
+                {
+                    padding: 0.7em;
+                    font-size: 1.3em;
+                }
+                .BackLogInBtn
+                {
+                    padding: 0.7em;
+                    font-size: 1.3em;
+                }
+            }
+        }
+
+        .VaultSection
+        {
+            width: 50%;
+        }
+
+        .searchdata
+        {
+            width: 50%;
+            input 
+            {
+                width: 80%;
+                padding: 0.5em;
+                padding-right: 5em;
+                border: 1px solid rgb(172, 172, 172);
+                border-radius: 0.5em;
+                font-size: 1.2em;
+            }
+        }
+    }
+}

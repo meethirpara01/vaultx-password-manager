@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>VaultX</title>
+</head>
+<body class="light-theme">
+    <main>
+        <nav class="navbar">
+            <h1>VaultX</h1>
+            <div class="toggle">
+                <img class="theme" src="icons8-toggle-on-100.png" alt="">
+                 <!-- <h1>🌓</h1> -->
+            </div>
+        </nav>
+        <section class="login">
+            <form action="" onsubmit="event.preventDefault();">
+                <input class="name" type="text" name="name" placeholder="Enter Name" required>
+                <small class="error"></small>
+                <input class="pin" type="password" name="password" placeholder="Enter PIN" required>
+                <small class="errorpass"></small>
+                <button type="submit" class="btn">Log In</button>
+                <p>New user? <span class="showSignup">Sign Up</span></p>
+            </form>
+        </section>
+        <section class="SignUp">
+            <form action="" onsubmit="event.preventDefault();">
+                <h2>Create Account</h2>
+                <input class="setname" type="text" name="name" placeholder="Enter Name" required>
+                <small class="error"></small>
+                <input class="setpin" type="password" name="password" placeholder="Enter PIN" required>
+                <small class="errorpass"></small>
+                <input class="pin" type="password" name="password" placeholder="Confirm PIN" required>
+                <small class="errorpass"></small>
+                <button type="submit" class="CreateAcc">Create</button>
+                <button type="submit" class="BackLogInBtn">Back To Log In</button>
+            </form>
+        </section>
+        <section class="VaultSection">
+            <form action="" onsubmit="event.preventDefault();">
+                <input class="Website" type="text" name="name" placeholder="Website or Lable">
+                <small class="siterror"></small>
+                <input class="username" type="text" name="password" placeholder="User Name / Email">
+                <small class="usernameerror"></small>
+                <input class="password" type="password" name="password" placeholder="Password">
+                <small class="passerror"></small>
+                <button type="save" class="savebtn">SAVE</button>
+                <button class="logoutBtn">Logout</button>
+            </form>
+            
+        </section>
+        <div class="searchdata">
+                <input type="text" class="searchInput" placeholder="Search by website or username...">
+        </div>
+        <section class="DisplayData">
+            <!-- <div class="data">
+                <h3>Website or Lable: meethirpara</h3>
+                <h3>User Name / Email: @meethirpara01</h3>
+                <h3>Password: meethirpara</h3>
+                <button class="deleteInfo">Delete</button>
+            </div> -->
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,351 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+.light-theme {
+  background-color: #fff;
+}
+
+.dark-theme {
+  background-color: #1f1f1f;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5em;
+  padding: 1rem;
+}
+main .navbar {
+  width: 100%;
+  background-color: rgb(172, 172, 172);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.3);
+  color: black;
+  border: 1px solid rgb(172, 172, 172);
+  border-radius: 0.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .navbar h1 {
+  font-family: fantasy;
+  padding-left: 0.7rem;
+  font-size: 1.5em;
+}
+main .navbar .toggle {
+  display: flex;
+  justify-content: flex-end;
+}
+main .navbar .toggle img {
+  padding-right: 0.7rem;
+  width: 44%;
+  aspect-ratio: 1/1;
+  cursor: pointer;
+}
+main .login {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .login form {
+  width: 100%;
+  aspect-ratio: 1/1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  background-color: rgb(172, 172, 172);
+  border: 1px solid rgb(172, 172, 172);
+  border-radius: 0.5em;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.3);
+}
+main .login form input {
+  padding: 0.5em;
+  padding-right: 7em;
+  border: 1px solid rgb(172, 172, 172);
+  border-radius: 0.5em;
+  font-size: 1.1em;
+}
+main .login form .btn {
+  padding: 0.5em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  font-size: 1.2em;
+  border-radius: 0.5em;
+  border: 1px solid rgb(172, 172, 172);
+  background-color: #1f1f1f;
+  color: white;
+}
+main .login form .btn:hover {
+  scale: 1.1;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+main .login form p {
+  font-size: 1.2em;
+}
+main .login form p .showSignup {
+  font-size: 1em;
+  color: blue;
+  cursor: pointer;
+}
+main .SignUp {
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .SignUp form {
+  width: 100%;
+  aspect-ratio: 1/1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  background-color: rgb(172, 172, 172);
+  border: 1px solid rgb(172, 172, 172);
+  border-radius: 0.5em;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.3);
+}
+main .SignUp form input {
+  padding: 0.5em;
+  padding-right: 7em;
+  border: 1px solid rgb(172, 172, 172);
+  border-radius: 0.5em;
+  font-size: 1.1em;
+}
+main .SignUp form .CreateAcc {
+  padding: 0.5em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  font-size: 1.2em;
+  border-radius: 0.5em;
+  border: 1px solid rgb(172, 172, 172);
+  background-color: #1f1f1f;
+  color: white;
+}
+main .SignUp form .CreateAcc:hover {
+  scale: 1.1;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+main .SignUp form .BackLogInBtn {
+  padding: 0.5em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  font-size: 1.2em;
+  border-radius: 0.5em;
+  border: 1px solid rgb(172, 172, 172);
+  background-color: #1f1f1f;
+  color: white;
+}
+main .SignUp form .BackLogInBtn:hover {
+  scale: 1.1;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+main .VaultSection {
+  width: 100%;
+  display: none;
+  justify-content: center;
+  background-color: rgb(172, 172, 172);
+  border-radius: 0.5em;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.3);
+  padding: 5em;
+}
+main .VaultSection form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+main .VaultSection form input {
+  padding: 0.5em;
+  padding-right: 8em;
+  border: 1px solid rgb(172, 172, 172);
+  border-radius: 0.5em;
+  font-size: 1.1em;
+}
+main .VaultSection form .savebtn {
+  padding: 0.5em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  font-size: 1.2em;
+  border-radius: 0.5em;
+  border: 1px solid rgb(172, 172, 172);
+  background-color: #1f1f1f;
+  color: white;
+}
+main .VaultSection form .savebtn:hover {
+  scale: 1.1;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+main .VaultSection form .logoutBtn {
+  padding: 0.5em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  font-size: 1.2em;
+  border-radius: 0.5em;
+  border: 1px solid rgb(172, 172, 172);
+  background-color: #1f1f1f;
+  color: white;
+}
+main .VaultSection form .logoutBtn:hover {
+  scale: 1.1;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+main .VaultSection .logoutBtn {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+main .searchdata {
+  width: 100%;
+  display: none;
+  justify-content: center;
+  background-color: rgb(172, 172, 172);
+  border-radius: 0.5em;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.3);
+  padding: 1em;
+}
+main .searchdata input {
+  width: 100%;
+  padding: 0.5em;
+  padding-right: 5em;
+  border: 1px solid rgb(172, 172, 172);
+  border-radius: 0.5em;
+  font-size: 1.1em;
+}
+main .DisplayData {
+  width: 100%;
+  display: none;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2em;
+  background-color: rgb(172, 172, 172);
+  border-radius: 0.5em;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.3);
+  padding: 5em;
+}
+main .DisplayData .data {
+  background-color: #1f1f1f;
+  color: #fff;
+  padding: 1em;
+  border-radius: 0.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+main .DisplayData .data .deleteInfo {
+  padding: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 1.2em;
+  border-radius: 0.5em;
+  border: 1px solid rgb(172, 172, 172);
+  background-color: #1f1f1f;
+  color: white;
+}
+main .DisplayData .data .deleteInfo:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+
+@media (min-width: 1080px) {
+  main {
+    padding: 2rem;
+  }
+  main .navbar h1 {
+    font-size: 1.9em;
+  }
+  main .navbar .toggle img {
+    padding-right: 0.7rem;
+    width: 60%;
+  }
+  main .login {
+    width: 55%;
+  }
+  main .login form {
+    width: 74%;
+  }
+  main .login form input {
+    padding: 0.8em;
+    padding-right: 10em;
+    font-size: 1.2em;
+  }
+  main .login form .btn {
+    padding: 0.7em;
+    font-size: 1.3em;
+  }
+  main .SignUp {
+    width: 55%;
+  }
+  main .SignUp form {
+    gap: 1.2em;
+    width: 74%;
+  }
+  main .SignUp form input {
+    padding: 0.8em;
+    padding-right: 10em;
+    font-size: 1.2em;
+  }
+  main .SignUp form .CreateAcc {
+    padding: 0.7em;
+    font-size: 1.3em;
+  }
+  main .SignUp form .BackLogInBtn {
+    padding: 0.7em;
+    font-size: 1.3em;
+  }
+  main .VaultSection {
+    width: 50%;
+  }
+  main .searchdata {
+    width: 50%;
+  }
+  main .searchdata input {
+    width: 80%;
+    padding: 0.5em;
+    padding-right: 5em;
+    border: 1px solid rgb(172, 172, 172);
+    border-radius: 0.5em;
+    font-size: 1.2em;
+  }
+}/*# sourceMappingURL=style.css.map */
